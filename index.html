@@ -5,9 +5,33 @@
         <title>Calculator</title>
         <style>
             .calculator_keys {
-                display: grid;
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+              gap: 10px;
+              max-width: 300px;
+}
 
-            }
+.key--operator {
+  background: #ffd966;
+}
+
+/* make all operator keys go into last column */
+.key--operator {
+  grid-column: 4;   /* column 4 = rightmost column */
+}
+        .calculator_display{
+            font-size: 3rem;   /* makes numbers bigger */
+            width: 275px;    /* makes the display section taller */
+            display: flex;
+            justify-content: flex-end;  /* align numbers to the right */
+            align-items: center; /* vertically center text */
+            padding: 10px;
+            border: 2px solid black;
+        }
+        
+            
+                
+            
         </style>
     </head>
     <body>

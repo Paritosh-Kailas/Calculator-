@@ -67,6 +67,15 @@ function calculate(n1, operator, n2) {
   if (operator === 'multiply') return n1 * n2
   if (operator === 'divide') return n1 / n2
 }
+if(action === 'decimal'){
+  display.textContent = displayedNum + '.'
+}
+else{
+  display.textContent = displayedNum
+}
+
+
+
 
 
 
